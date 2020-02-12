@@ -7,7 +7,7 @@ exports[`Moods container matches a snapshot 1`] = `
       Array [
         Object {
           "count": 0,
-          "name": "DRINK_COFFEE",
+          "name": "COFFEE",
           "stateName": "coffees",
           "text": "Drink Coffee",
         },

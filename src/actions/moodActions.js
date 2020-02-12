@@ -1,21 +1,25 @@
-export const DRINK_COFFEE = 'DRINK_COFEE';
-export const drinkCoffee = () => ({
-  type: DRINK_COFFEE
+export const COFFEE = 'COFFEE';
+export const coffee = () => ({
+  type: COFFEE,
+  stateName: 'coffees'
 });
 
 export const EAT = 'EAT';
 export const eat = () => ({
-  type: EAT
+  type: EAT,
+  stateName: 'eats'
 });
 
 export const SLEEP = 'SLEEP';
 export const sleep = () => ({
-  type: SLEEP
+  type: SLEEP,
+  stateName: 'sleeps'
 });
 
 export const STUDY = 'STUDY';
 export const study = () => ({
-  type: STUDY
+  type: STUDY,
+  stateName: 'studies'
 });
 
 // export const CHANGE_NUMBER = 'CHANGE_NUMBER';

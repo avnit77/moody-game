@@ -71,9 +71,9 @@ describe('Moods', () => {
       expect(wrapper).toMatchSnapshot();
     });
 
-    it('updates state on DRINK_COFFEE selection', () => {
+    it('updates state on COFFEE selection', () => {
       const wrapper = shallow(<Moods />);
-      wrapper.instance().handleSelection('DRINK_COFFEE');
+      wrapper.instance().handleSelection('COFFEE');
 
       expect(wrapper.state('coffees')).toEqual(1);
     });

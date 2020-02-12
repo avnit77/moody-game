@@ -1,6 +1,6 @@
 import {
-  DRINK_COFFEE,
-  drinkCoffee,
+  COFFEE,
+  coffee,
   EAT,
   eat,
   SLEEP,
@@ -11,9 +11,9 @@ import {
 
 describe('mood action creators', () => {
   it('creates a drink coffee action', () => {
-    const action = drinkCoffee();
+    const action = coffee();
 
-    expect(action).toEqual({ type: DRINK_COFFEE });
+    expect(action).toEqual({ type: COFFEE });
   });
 
   it('creates an eat action', () => {

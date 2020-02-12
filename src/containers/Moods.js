@@ -3,7 +3,7 @@ import Controls from '../components/controls/Controls';
 import Face from '../components/face/Face';
 
 const actions = [
-  { name: 'DRINK_COFFEE', text: 'Drink Coffee', stateName: 'coffees' },
+  { name: 'COFFEE', text: 'Drink Coffee', stateName: 'coffees' },
   { name: 'EAT_SNACK', text: 'Snack', stateName: 'snacks' },
   { name: 'TAKE_NAP', text: 'Nap', stateName: 'naps' },
   { name: 'STUDY', text: 'Study', stateName: 'studies' },
@@ -35,7 +35,7 @@ export default class Moods extends Component {
 
   handleSelection = name => {
     switch(name) {
-      case 'DRINK_COFFEE':
+      case 'COFFEE':
         this.setState(state => ({ coffees: state.coffees + 1 }));
         break;
       case 'EAT_SNACK':
