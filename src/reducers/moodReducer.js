@@ -1,7 +1,7 @@
-
 import {
   COFFEE,
   EAT,
+  
   SLEEP,
   STUDY
 } from '../actions/moodActions';
