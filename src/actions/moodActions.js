@@ -22,13 +22,3 @@ export const study = () => ({
   stateName: 'studies'
 });
 
-// export const CHANGE_NUMBER = 'CHANGE_NUMBER';
-// export const changeNumber = number => {
-//   const payload = Number(number);
-//   if(isNaN(payload)) throw `${number} is not a number`;
-
-//   return {
-//     type: 'CHANGE_NUMBER',
-//     payload
-//   };
-// };
