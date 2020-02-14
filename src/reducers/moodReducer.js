@@ -6,7 +6,7 @@ import {
 } from '../actions/moodActions';
 
 export default function reducer(state, action) {
-  switch(action.type) {
+  switch(action) {
     case COFFEE:
       return { ...state, coffees: state.coffees + 1 };
     case EAT:

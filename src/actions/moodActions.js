@@ -1,26 +1,34 @@
 export const COFFEE = 'COFFEE';
 export const coffee = () => ({
-  type: COFFEE,
+  name: COFFEE,
+  text: 'Drink Coffee',
+  stateName: 'coffees'
 });
 
 export const EAT = 'EAT';
 export const eat = () => ({
-  type: EAT,
+  name: EAT,
+  text: 'Snack',
+  stateName: 'snacks'
 });
 
 export const SLEEP = 'SLEEP';
 export const sleep = () => ({
-  type: SLEEP,
+  name: SLEEP,
+  text: 'Nap',
+  stateName: 'naps'
 });
 
 export const STUDY = 'STUDY';
 export const study = () => ({
-  type: STUDY,
+  name: STUDY,
+  text: 'Study',
+  stateName: 'studies'
 });
 
-export const actions = [
-  { name: 'COFFEE', text: 'Drink Coffee', stateName: 'coffees' },
-  { name: 'EAT', text: 'Snack', stateName: 'snacks' },
-  { name: 'SLEEP', text: 'Nap', stateName: 'naps' },
-  { name: 'STUDY', text: 'Study', stateName: 'studies' },
-];
+// export const actions = [
+//   { name: 'COFFEE', text: 'Drink Coffee', stateName: 'coffees' },
+//   { name: 'EAT', text: 'Snack', stateName: 'snacks' },
+//   { name: 'SLEEP', text: 'Nap', stateName: 'naps' },
+//   { name: 'STUDY', text: 'Study', stateName: 'studies' },
+// ];

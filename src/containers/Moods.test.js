@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Moods, { isTired, isHyper, isEducated, isHungry, getFace } from './Moods';
+import { isTired, isHyper, isEducated, isHungry, getFace } from '../selectors/selectors';
+import Moods from './Moods';
 
 describe('Moods', () => {
   describe('mood selectors', () => {
@@ -45,11 +46,11 @@ describe('Moods', () => {
     });
 
     it('is sleeping if tired', () => {
-      expect(getFace({ coffees: 4, snacks: 0 })).toEqual('😴 zzz');
+      expect(getFace({ coffees: 0, snacks: 2 })).toEqual('😴 zzz');
     });
 
     it('is crazy if hyper', () => {
-      expect(getFace({ coffees: 4, naps: 0, snacks: 0, studies: 0 })).toEqual('😳 :-O ');
+      expect(getFace({ coffees: 4, naps: 0, snacks: 2, studies: 0 })).toEqual('😳 :-O ');
     });
 
     it('is mindblown if educated', () => {
@@ -78,16 +79,16 @@ describe('Moods', () => {
       expect(wrapper.state('coffees')).toEqual(1);
     });
 
-    it('updates state on TAKE_NAP selection', () => {
+    it('updates state on SLEEP selection', () => {
       const wrapper = shallow(<Moods />);
-      wrapper.instance().handleSelection('TAKE_NAP');
+      wrapper.instance().handleSelection('SLEEP');
 
       expect(wrapper.state('naps')).toEqual(1);
     });
 
-    it('updates state on EAT_SNACK selection', () => {
+    it('updates state on EAT selection', () => {
       const wrapper = shallow(<Moods />);
-      wrapper.instance().handleSelection('EAT_SNACK');
+      wrapper.instance().handleSelection('EAT');
 
       expect(wrapper.state('snacks')).toEqual(1);
     });
